@@ -15,7 +15,7 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     
     if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento('p',`Tu sabes más que pescao frito y acertaste esa Vaina en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'} 🤞`);
+        asignarTextoElemento('p',`Tu sabes más que pescao frito y acertaste esa vaina en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'} 🤞`);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         //El usuario no acertó.
@@ -54,7 +54,7 @@ function generarNumeroSecreto() {
 }
 
 function condicionesIniciales() {
-    asignarTextoElemento('h1','¿Cuantos chavistas se necesitan como mínimo para cometer fraude electoral?');
+    asignarTextoElemento('h1','Cuantos votos tuvo Maduro?');
     asignarTextoElemento('p',`Indica un número del 1 al ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
