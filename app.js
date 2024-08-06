@@ -15,14 +15,14 @@ function verificarIntento() {
     let numeroDeUsuario = parseInt(document.getElementById('valorUsuario').value);
     
     if (numeroDeUsuario === numeroSecreto) {
-        asignarTextoElemento('p',`Tu sabes más que pescao frito y acertaste esa mondá en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'} mi vale 🤞`);
+        asignarTextoElemento('p',`Tu sabes más que pescao frito y acertaste esa VAINA en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'} 🤞`);
         document.getElementById('reiniciar').removeAttribute('disabled');
     } else {
         //El usuario no acertó.
         if (numeroDeUsuario > numeroSecreto) {
-            asignarTextoElemento('p','El número secreto es menor, pelao 👀');
+            asignarTextoElemento('p','El número secreto es menor 👀');
         } else {
-            asignarTextoElemento('p','El número secreto es mayor, vale mía 🤦‍♀️');
+            asignarTextoElemento('p','El número secreto es mayor 🤦‍♀️');
         }
         intentos++;
         limpiarCaja();
