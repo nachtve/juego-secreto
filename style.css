@@ -15,7 +15,7 @@ body {
 
 
 body::before {
-    background-image: url("img/mari.png");
+    background-image: url("img/1.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";
